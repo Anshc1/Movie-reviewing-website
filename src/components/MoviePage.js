@@ -11,7 +11,7 @@ import { GoogleLogin } from 'react-google-login';
 import { GoogleLogout } from 'react-google-login';
 function MoviePage() {
     const location = useLocation();
-    const { title, posterlink, discription } = location.state;
+    const { title, posterlink, discription, releaseDate, isadlt, votect } = location.state;
     const [isLoggedin, setisLoggedin] = useState(false)
     const [Name, setName] = useState("")
     const responseGoogle = (response) => {
@@ -23,9 +23,9 @@ function MoviePage() {
     }
     return (
         <div>
-            <Navbar bg="light" expand="lg" className='navsize'>
-                <Navbar.Brand style={{ fontSize: '2.5rem', paddingRight: '80rem' }} className='navsize'>MoviesVerse</Navbar.Brand>
-               
+            <Navbar bg="dark" expand="lg" className='navsize'>
+                <Navbar.Brand style={{ fontSize: '2.5rem', paddingRight: '80rem' , color:"white"}} className='navsize'>MoviesVerse</Navbar.Brand>
+
 
                 <div style={{ paddingLeft: '5rem' }}>
                     {
@@ -67,13 +67,17 @@ function MoviePage() {
                 <Col >
 
                     <Card border="warning" style={{ width: '78rem', height: '45rem', fontSize: '1.2rem' }}>
-
                         <Card.Body>
-                            <Card.Title style={{ fontSize: '1.8rem' }}>{title}</Card.Title>
+                            <Card.Title style={{ fontSize: '2.5rem' ,fontWeight:"70"}}>{title}</Card.Title>
                             <Card.Text>
                                 {discription}
                             </Card.Text>
-                            <Card.Title style={{ fontSize: '1.8rem' }}>Reviews</Card.Title>
+                        
+                            <div className="text-muted">ReleaseDate {releaseDate}</div>
+                            <div className="text-muted">Parent Guide : {{isadlt} ? "Yes":"No"}</div>
+                            <div className="text-muted">Popularity : {votect}</div>
+                            <br />
+                            <Card.Title style={{ fontSize: '2.5rem' ,fontWeight:"70"}}>Reviews</Card.Title>
                         </Card.Body>
                     </Card>
                     <br />

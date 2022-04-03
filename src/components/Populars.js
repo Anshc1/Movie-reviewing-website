@@ -19,7 +19,8 @@ function Populars(type) {
         var ct =0; 
         var ar = []; 
         data.results.forEach(element => {
-          ar[ct] = [element.title , element.overview , element.poster_path , element.release_date ];
+          ar[ct] = [element.title , element.overview , element.poster_path , element.release_date , element.adult
+            ,element.adult , element.vote_average];
           ct++; 
         });
         setData([]); 
@@ -36,7 +37,7 @@ function Populars(type) {
         {
           Data.map((el)=>{  
             return(
-              <Displaycards  key={el[0]} title={el[0]} img = {el[2]} desc ={el[1]} rld ={el[3]} />
+              <Displaycards  key={el[0]} title={el[0]} img = {el[2]} desc ={el[1]} rld ={el[3]}  adlt = {el[4]} votes={el[5]} />
           )
           })
         }

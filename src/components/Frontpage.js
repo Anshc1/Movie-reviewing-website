@@ -22,10 +22,9 @@ function Frontpage() {
     return (
 
         <>
-            <div style={{ display: "flex" }}>
 
-                <Navbar bg="light" expand="lg" className='navsize'>
-                    <Navbar.Brand style={{ fontSize: '2.5rem', paddingRight: '60rem' }} className='navsize'>MoviesVerse</Navbar.Brand>
+                <Navbar bg="dark" expand="lg" className='navsize'>
+                    <Navbar.Brand style={{ fontSize: '2.5rem', paddingRight: '60rem' , color:"white" }} className='navsize'>MoviesVerse</Navbar.Brand>
                     <Form className="d-flex"  >
                         <FormControl
                             type="text"
@@ -64,7 +63,6 @@ function Frontpage() {
                         }
                     </div>
                 </Navbar>
-            </div>
             <br>
             </br>
             <br>
