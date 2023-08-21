@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Movies Reviewing Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Movies Reviewing Website is a platform that allows users to search for and review movies. Developed using React for the frontend, Node.js for the backend, and MongoDB for the database, this application enables users to discover movies, read and write reviews, and interact with an extensive movie database. Below, you'll find an overview of the project, its features, file structure, installation instructions, and usage guidelines.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Movie Search: Users can search for movies using the integrated Movies API to retrieve detailed information about each movie.
+- Movie Reviews: Users can read and write reviews for movies. Each review is associated with reviewer details and timestamps for secure data management.
+- Google Auth Integration: The app uses Google Auth service for user authentication, ensuring a secure and streamlined user experience.
+- Custom Backend: A custom backend has been developed to manage the storage of reviews, reviewer details, and timestamps.
+- Popular Movies: A section showcases popular movies to help users discover trending content.
 
-### `npm start`
+## File Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+- public
+  - favicon.ico
+  - index.html
+  - logo192.png
+  - logo512.png
+  - manifest.json
+  - robots.txt
+- src
+  - components
+    - DisplayCards.js
+    - Frontpage.js
+    - MoviePage.js
+    - Populars.js
+  - App.css
+  - App.js
+  - App.test.js
+  - index.css
+  - index.js
+  - logo.svg
+  - reportWebVitals.js
+  - setupTests.js
+- .gitignore
+- README.md
+- package-lock.json
+- package.json
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository: `git clone https://github.com/your-username/movies-reviewing-website.git`
+2. Navigate to the project directory: `cd movies-reviewing-website`
+3. Install dependencies: `npm install`
+4. Set up MongoDB: Ensure you have a MongoDB instance running and configure connection settings in the backend code.
+5. Configure Google Auth: Update necessary configurations for Google Auth in the frontend code.
+6. Start the development server: `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Open the app in your web browser.
+2. Log in using your Google account to access all features.
+3. Use the search bar to find movies of interest.
+4. Click on a movie to view its details and read existing reviews.
+5. Write your own review by providing a rating and comments.
+6. Explore the Popular Movies section to discover trending films.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contributions are welcome! To contribute, fork the repository, make your changes, and submit a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any questions or assistance, please contact us at anshchaturvadi2000@gmail.com. We hope you enjoy using the Movies Reviewing Website!
